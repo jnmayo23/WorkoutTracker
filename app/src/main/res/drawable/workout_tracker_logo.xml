@@ -1,0 +1,41 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1920dp"
+    android:height="1080dp"
+    android:viewportWidth="1920"
+    android:viewportHeight="1080">
+    <path
+        android:fillColor="#000"
+        android:strokeColor="#000"
+        android:strokeWidth="1"
+        android:strokeMiterLimit="100"
+        android:name="Ellipse 1"
+        android:pathData="m265.5 382c87 0 157.5 70.5 157.5 157.5c0 87 -70.5 157.5 -157.5 157.5c-87 0 -157.5 -70.5 -157.5 -157.5c0 -87 70.5 -157.5 157.5 -157.5z" />
+    <path
+        android:fillColor="#000"
+        android:strokeColor="#000"
+        android:strokeWidth="1"
+        android:strokeMiterLimit="100"
+        android:name="Ellipse 1"
+        android:pathData="m959.5 382c87 0 157.5 70.5 157.5 157.5c0 87 -70.5 157.5 -157.5 157.5c-87 0 -157.5 -70.5 -157.5 -157.5c0 -87 70.5 -157.5 157.5 -157.5z" />
+    <path
+        android:fillColor="#000"
+        android:strokeColor="#000"
+        android:strokeWidth="1"
+        android:strokeMiterLimit="100"
+        android:name="Ellipse 1"
+        android:pathData="m1655.5 378c87 0 157.5 70.5 157.5 157.5c0 87 -70.5 157.5 -157.5 157.5c-87 0 -157.5 -70.5 -157.5 -157.5c0 -87 70.5 -157.5 157.5 -157.5z" />
+    <path
+        android:fillColor="#000"
+        android:strokeColor="#000"
+        android:strokeWidth="30"
+        android:strokeMiterLimit="100"
+        android:name="Line 1"
+        android:pathData="m449 544v-1h323v1h-323z" />
+    <path
+        android:fillColor="#000"
+        android:strokeColor="#000"
+        android:strokeWidth="30"
+        android:strokeMiterLimit="100"
+        android:name="Line 1"
+        android:pathData="m1146 545v-1h323v1h-323z" />
+</vector>
