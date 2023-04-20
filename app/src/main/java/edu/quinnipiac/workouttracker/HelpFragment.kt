@@ -42,8 +42,7 @@ class HelpFragment : Fragment() {
         RecyclerView.Adapter<RulesAdapter.RuleViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RuleViewHolder {
-            val itemView =
-                LayoutInflater.from(parent.context).inflate(R.layout.item_rule, parent, false)
+            val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_rule, parent, false)
             return RuleViewHolder(itemView)
         }
 
