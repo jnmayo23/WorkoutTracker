@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/stopwatchFragment"
+        android:icon="@drawable/stopwatch_icon"
+        android:title="Stopwatch" />
+
+    <item
+        android:id="@+id/intervalWorkoutListFragment"
+        android:icon="@drawable/interval_timer_icon"
+        android:title="Intervals" />
+
+    <item
+        android:id="@+id/workoutLogFragment"
+        android:icon="@drawable/workout_log_icon"
+        android:title="Workout Log" />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/settings_icon"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/helpFragment"
+        android:icon="@drawable/help_icon"
+        android:title="Help" />
+
+</menu>
