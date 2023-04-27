@@ -46,7 +46,7 @@ class StopwatchFragment : Fragment() {
         }
 
         // The pause button pauses the stopwatch
-        binding.pauseButton.setOnClickListener {
+        binding.stopButton.setOnClickListener {
             if (running) {
                 saveOffset()
                 binding.stopwatch.stop()
