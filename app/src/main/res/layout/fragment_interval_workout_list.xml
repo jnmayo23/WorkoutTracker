@@ -1,14 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntervalWorkoutListFragment">
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display_workouts" />
+
+    <GridLayout
+        android:id="@+id/grid_view"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp">
+        <TextView
+        android:id="@+id/interval1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+        <Button
+        android:id="@+id/Ibutton1"
+            android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to list" />
+        <TextView
+            android:id="@+id/interval2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+        <Button
+            android:id="@+id/Ibutton2"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to list" />
+
+        <TextView
+            android:id="@+id/interval3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+        <Button
+            android:id="@+id/Ibutton3"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to list" />
+        <TextView
+            android:id="@+id/interval4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+        <Button
+            android:id="@+id/Ibutton4"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to list" />
+
+        <TextView
+            android:id="@+id/interval5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+        <Button
+            android:id="@+id/Ibutton5"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to list" />
+
+
+    </GridLayout>
+
+
+    <EditText
+        android:id="@+id/name"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:hint="Enter workout name" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/sets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number of sets" />
+    <EditText
+        android:id="@+id/high"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter time on high intensity" />
+    <EditText
+        android:id="@+id/low"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter time on low intensity" />
+    <EditText
+        android:id="@+id/cool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter workout name" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Workout" />
+
+</LinearLayout>
