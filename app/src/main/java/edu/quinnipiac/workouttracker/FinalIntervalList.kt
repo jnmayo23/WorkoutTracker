@@ -11,22 +11,22 @@ data class FinalIntervalList(
 val finalList = mutableListOf<FinalIntervalList>()
 
 fun getFinalName(number: Int): String{
-    return List[number].name
+    return finalList[number].name
 }
 
 fun getFinalSets(number: Int): String{
-    return List[number].sets
+    return finalList[number].sets
 }
 
 fun getFinalHigh(number: Int): String{
-    return List[number].highIntensity
+    return finalList[number].highIntensity
 }
 
 fun getFinalLow(number: Int): String{
-    return List[number].lowIntensity
+    return finalList[number].lowIntensity
 }
 
 fun getFinalCool(number: Int): String{
-    return List[number].coolDown
+    return finalList[number].coolDown
 }
 
