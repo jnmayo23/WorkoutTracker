@@ -20,6 +20,8 @@ class SettingsFragment : Fragment() {
         val greenButton = view.findViewById<Button>(R.id.green)
         val blueButton = view.findViewById<Button>(R.id.blue)
 
+
+
         redButton.setOnClickListener { changeBackgroundColor(Color.RED) }
         greenButton.setOnClickListener { changeBackgroundColor(Color.GREEN) }
         blueButton.setOnClickListener { changeBackgroundColor(Color.BLUE) }
