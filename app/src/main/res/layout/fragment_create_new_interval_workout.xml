@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateNewIntervalWorkoutFragment">
+
+    <EditText
+        android:id="@+id/newName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Interval Workout Name" />
+
+    <EditText
+        android:id="@+id/newSets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Number of Sets" />
+
+    <EditText
+        android:id="@+id/newWarmUpTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Warm Up Time in Seconds" />
+
+    <EditText
+        android:id="@+id/newHighIntensityTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter High Intensity Time in Seconds" />
+
+    <EditText
+        android:id="@+id/newLowIntensityTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Low Intensity Time in Seconds" />
+
+    <EditText
+        android:id="@+id/newCoolDownTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Cool Down Time in Seconds" />
+
+    <Button
+        android:id="@+id/addIntervalWorkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Add Interval Workout"
+        android:textAllCaps="false" />
+
+</LinearLayout>

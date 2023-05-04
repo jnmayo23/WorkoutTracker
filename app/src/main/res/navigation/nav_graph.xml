@@ -22,7 +22,34 @@
         android:id="@+id/intervalWorkoutListFragment"
         android:name="edu.quinnipiac.workouttracker.IntervalWorkoutListFragment"
         android:label="Interval Workout List"
-        tools:layout="@layout/fragment_interval_workout_list" />
+        tools:layout="@layout/fragment_interval_workout_list">
+        <action android:id="@+id/action_intervalWorkoutListFragment_to_createNewIntervalWorkoutFragment"
+            app:destination="@id/createNewIntervalWorkoutFragment" />
+        <action android:id="@+id/action_intervalWorkoutListFragment_to_intervalTimerFragment"
+            app:destination="@id/intervalTimerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createNewIntervalWorkoutFragment"
+        android:name="edu.quinnipiac.workouttracker.CreateNewIntervalWorkoutFragment"
+        android:label="Create New Interval Workout"
+        tools:layout="@layout/fragment_create_new_interval_workout">
+        <argument
+            android:name="item_id"
+            app:argType="integer" />
+        <action android:id="@+id/action_createNewIntervalWorkoutFragment_to_intervalWorkoutListFragment"
+            app:destination="@id/intervalWorkoutListFragment" />
+   </fragment>
+
+    <fragment
+        android:id="@+id/intervalTimerFragment"
+        android:name="edu.quinnipiac.workouttracker.IntervalTimerFragment"
+        android:label="Interval Timer"
+        tools:layout="@layout/fragment_interval_timer">
+        <argument
+            android:name="item_id"
+            app:argType="integer" />
+    </fragment>
 
     <fragment
         android:id="@+id/workoutLogFragment"
