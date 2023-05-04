@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun readCSVFile(){
-       val bufferedReader = BufferedReader(assets.open("intervals.csv").reader())
+        val bufferedReader = BufferedReader(assets.open("intervals.csv").reader())
         val csvParser = CSVParser.parse(bufferedReader, CSVFormat.DEFAULT)
 
 

@@ -17,7 +17,7 @@ class CreateNewIntervalWorkoutFragment : Fragment() {
 
     private val viewModel: IntervalWorkoutViewModel by activityViewModels {
         IntervalWorkoutViewModelFactory(
-            (activity?.application as Application).intervalWorkoutDatabase.getIntervalWorkoutDao()
+            (activity?.application as WorkoutApplication).intervalWorkoutDatabase.getIntervalWorkoutDao()
         )
     }
     lateinit var intervalWorkout: IntervalWorkout

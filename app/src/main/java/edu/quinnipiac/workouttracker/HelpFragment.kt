@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.fragment_rules.*
-import kotlinx.android.synthetic.main.item_rule.view.*
+//import kotlinx.android.synthetic.main.fragment_rules.*
+//import kotlinx.android.synthetic.main.item_rule.view.*
 
 class HelpFragment : Fragment() {
 
@@ -35,8 +35,8 @@ class HelpFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        rulesList.layoutManager = LinearLayoutManager(context)
-        rulesList.adapter = RulesAdapter(rules)
+        //  rulesList.layoutManager = LinearLayoutManager(context)
+        // rulesList.adapter = RulesAdapter(rules)
     }
 
     private class RulesAdapter(private val rules: List<String>) :
@@ -48,7 +48,7 @@ class HelpFragment : Fragment() {
         }
 
         override fun onBindViewHolder(holder: RuleViewHolder, position: Int) {
-            holder.itemView.ruleText.text = rules[position]
+            //        holder.itemView.ruleText.text = rules[position]
         }
 
         override fun getItemCount() = rules.size

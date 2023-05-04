@@ -16,7 +16,7 @@ class IntervalTimerFragment : Fragment() {
 
     private lateinit var binding: FragmentIntervalTimerBinding
 
-    var warmUpTime = 10000;
+    var warmUpTime = 0;
     var highIntensityTime = 0;
     var lowIntensityTime = 0;
     var coolDownTime = 0;
@@ -37,7 +37,7 @@ class IntervalTimerFragment : Fragment() {
         binding = FragmentIntervalTimerBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        var coolDownTimer = object : CountDownTimer(50000, 1000) {
+        var coolDownTimer = object : CountDownTimer(5000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 // Used for formatting digit to be in 2 digits only
                 val f: NumberFormat = DecimalFormat("00")
@@ -55,7 +55,7 @@ class IntervalTimerFragment : Fragment() {
             }
         }
 
-        var highIntensityTimer = object : CountDownTimer(50000, 1000) {
+        var highIntensityTimer = object : CountDownTimer(15000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 // Used for formatting digit to be in 2 digits only
                 val f: NumberFormat = DecimalFormat("00")
@@ -70,10 +70,11 @@ class IntervalTimerFragment : Fragment() {
                 binding.intervalTime.setText("00:00")
                 //lowIntensityTimer.start()
                 state = LOW_INTENSITY
+                binding.intervalState.text = "Low Intensity"
             }
         }
 
-        var lowIntensityTimer = object : CountDownTimer(50000, 1000) {
+        var lowIntensityTimer = object : CountDownTimer(20000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 // Used for formatting digit to be in 2 digits only
                 val f: NumberFormat = DecimalFormat("00")
@@ -99,7 +100,7 @@ class IntervalTimerFragment : Fragment() {
             }
         }
 
-        var warmUpTimer = object : CountDownTimer(50000, 1000) {
+        var warmUpTimer = object : CountDownTimer(10000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 // Used for formatting digit to be in 2 digits only
                 val f: NumberFormat = DecimalFormat("00")
@@ -114,6 +115,7 @@ class IntervalTimerFragment : Fragment() {
                 binding.intervalTime.setText("00:00")
                 highIntensityTimer.start()
                 state = HIGH_INTENSITY
+                binding.intervalState.text = "High Intensity"
             }
         }
 
