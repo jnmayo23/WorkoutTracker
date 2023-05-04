@@ -14,15 +14,10 @@ class HelpFragment : Fragment() {
 
     private val rules = listOf(
         "How do you change the background of the app: Go to settings",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10"
+        "How do you save a workout: Go to the workout log",
+        "What is a stopwatch: stopwatch is a simple timekeeping device that measures elapsed time in hours, minutes, and seconds",
+        "What is an interval timer: allows you to program different time intervals for work and rest periods"
+
     )
 
     override fun onCreateView(
