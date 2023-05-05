@@ -2,6 +2,7 @@ package edu.quinnipiac.workouttracker
 
 import java.time.Duration
 
+//list for the workout log some of the functions are not necessary
 data class WorkoutList(
     val date: String,
     val name: String,
